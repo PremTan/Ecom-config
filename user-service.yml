@@ -1,1 +1,18 @@
+server:
+  port: 8081
 
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_service_db
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: mySuperSecretKeyForJWTGenerationmySuperSecretKeyForJWTGenerationmySuperSecretKey!!
+  expiration: 86400000   # 1 day in ms
