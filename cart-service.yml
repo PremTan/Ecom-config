@@ -3,7 +3,7 @@ spring:
     name: CART-SERVICE
   data:
     mongodb:
-        uri: mongodb://localhost:27017/cartdb
+        uri: mongodb://localhost:27017/cart_service_db
         auto-index-creation: true
         
 management:
